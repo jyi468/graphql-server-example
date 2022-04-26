@@ -10,6 +10,7 @@ const typeDefs = gql`
   type Book {
     title: String
     author: String
+    published: Int
   }
 
   # The "Query" type is special: it lists all of the available queries that
@@ -24,10 +25,12 @@ const books = [
     {
         title: 'The Awakening',
         author: 'Kate Chopin',
+        published: 1894,
     },
     {
         title: 'City of Glass',
         author: 'Paul Auster',
+        published: 1931,
     },
 ];
 
